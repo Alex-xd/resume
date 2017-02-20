@@ -12,9 +12,11 @@ $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
     text-align: center;
     background: #fff8e2;
 }
+
 * {
     @include box-sizing(border-box);
 }
+
 body {
     color: #333;
     font-size: 14px;
@@ -29,11 +31,13 @@ body {
         padding-top: 0;
     }
 }
+
 a {
     text-decoration: none;
     @include transition(all .2s ease-in-out);
 }
-.last-modified{
+
+.last-modified {
     position: absolute;
     top: 30px;
     left: 50%;
@@ -46,6 +50,7 @@ a {
         display: none;
     }
 }
+
 .content {
     position: relative;
     width: 1024px;
@@ -60,6 +65,7 @@ a {
         @include border-radius(0);
     }
 }
+
 .content-hd {
     width: 100%;
     padding: 30px 50px;
@@ -151,12 +157,12 @@ a {
                 text-align: center;
                 margin: 16px 0 0;
             }
-            &>li {
+            & > li {
                 height: 22px;
                 @media screen and (max-width: 720px) {
                     display: inline-block;
                 }
-                &>a {
+                & > a {
                     color: #fff;
                     font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
                     font-size: 14px;
@@ -180,6 +186,7 @@ a {
         }
     }
 }
+
 .content-bd {
     width: 100%;
     min-height: 200px;
@@ -260,7 +267,7 @@ a {
             width: 25%;
             @media screen and (max-width: 720px) {
                 width: 100%;
-                margin-bottom: 5px;
+                margin-bottom: 2px;
             }
         }
         .item-more {
@@ -278,6 +285,9 @@ a {
             float: left;
         }
     }
+    .personal .item-hd{
+        padding: 0 0 5px;
+    }
     .item-bd {
         margin-bottom: 5px;
     }
@@ -285,6 +295,7 @@ a {
         text-align: justify;
         word-break: break-all;
         line-height: 22px;
+        margin-bottom: 5px;
         .iconfont {
             color: $color-green;
         }
@@ -342,6 +353,7 @@ a {
         }
     }
 }
+
 .btn {
     display: inline-block;
     padding: 0 5px;
@@ -357,6 +369,7 @@ a {
         background-color: $color-green;
     }
 }
+
 .pdf {
     display: inline-block;
     position: fixed;
@@ -376,6 +389,7 @@ a {
         margin-left: 0;
     }
 }
+
 footer {
     text-align: center;
     .footer-link {
@@ -386,7 +400,7 @@ footer {
             margin-top: 25px;
         }
     }
-    &.print-footer{
+    &.print-footer {
         display: none;
     }
 }
@@ -397,27 +411,33 @@ footer {
     width: 3px;
     height: 3px;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, .2);
     background-clip: padding-box;
     min-height: 15px;
     box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
 }
+
 ::-webkit-scrollbar-thumb:vertical:hover {
     background-color: rgba(0, 0, 0, .3);
 }
+
 ::-webkit-scrollbar-thumb:vertical:active {
     background-color: rgba(0, 0, 0, .5);
 }
+
 ::-webkit-scrollbar-button {
     height: 0;
     width: 0;
 }
+
 ::-webkit-scrollbar-track {
     background-clip: padding-box;
     border: solid transparent;
     border-width: 0 0 0 4px;
 }
+
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
@@ -425,12 +445,16 @@ footer {
 ::selection {
     background: $color-gray;
 }
+
 ::-moz-selection {
     background: $color-gray;
 }
 
 // 打印样式
 @media print {
+    body{
+        padding:0;
+    }
     .content {
         width: 970px;
         height: 1372px;
@@ -439,14 +463,14 @@ footer {
         -webkit-border-radius: 0;
         border-radius: 0;
     }
-    .content .content-left{
+    .content .content-left {
         width: 52%;
     }
-    .content .content-right{
+    .content .content-right {
         width: 48%;
     }
     .content .content-hd {
-        padding: 60px 50px 40px;
+        //padding: 0 20px 14px;
     }
     .content .content-hd .title {
         font-size: 56px;
@@ -472,10 +496,10 @@ footer {
     .content .content-hd .contact ul {
         margin-bottom: 0;
     }
-    .content .content-hd .contact ul>li {
+    .content .content-hd .contact ul > li {
         height: 25px;
     }
-    .content .content-hd .contact ul>li>a {
+    .content .content-hd .contact ul > li > a {
         font-size: 15px;
     }
     .content .content-bd {
@@ -492,16 +516,19 @@ footer {
         margin-bottom: 0;
     }
     .content .content-bd .prize .item-hd {
-        padding: 11px 0 5px;
+        padding: 8px 0 5px;
+    }
+    .content .content-bd .personal .item-hd{
+        padding: 0 0 5px;
     }
     .content .content-bd .practice .item-time {
         width: 31%;
     }
     .content .content-bd .section-hd {
-        margin: 10px auto 8px;
+        margin: 0 auto 8px;
     }
     .content .content-bd section {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
     .content .section-content {
         line-height: 1.75 !important;
@@ -509,16 +536,16 @@ footer {
     .content .project {
         padding-top: 5px !important;
     }
-    .content .print-hidden{
+    .content .print-hidden {
         display: none;
     }
     .pdf {
         display: none;
     }
-    footer.github-footer{
+    footer.github-footer {
         display: none;
     }
-    footer.print-footer{
+    footer.print-footer {
         display: block;
     }
     footer.print-footer .footer-link {
