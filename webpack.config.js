@@ -14,6 +14,7 @@ module.exports = {
         filename: '[name].js?[chunkhash:8]',
         publicPath: "static/"
     },
+    devtool:'#source-map',
     plugins: [
         new HtmlPlugin({
             template: './src/index.html',
@@ -37,7 +38,7 @@ module.exports = {
         loaders: [{
             test: /\.html$/, loader: 'html'
         },  {
-            test: /\.scss$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract(['css', 'sass'])
+            test: /\.scss$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract(['css?sourceMap', 'sass'])
         },  {
             test: /\.css$/, loader: ExtractTextPlugin.extract(['css'])
         },  {
