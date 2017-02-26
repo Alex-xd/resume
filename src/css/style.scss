@@ -128,6 +128,7 @@ a {
         h2 {
             display: inline-block;
             font-size: 24px;
+            font-weight: 400;
             @media screen and (max-width: 720px) {
                 border-top: 1px solid darken($color-green, 2%);
                 margin: 5px auto 0;
@@ -285,7 +286,7 @@ a {
             float: left;
         }
     }
-    .personal .item-hd{
+    .personal .item-hd {
         padding: 0 0 5px;
     }
     .item-bd {
@@ -452,8 +453,8 @@ footer {
 
 // 打印样式
 @media print {
-    body{
-        padding:0;
+    body {
+        padding: 0;
     }
     .content {
         width: 970px;
@@ -518,7 +519,7 @@ footer {
     .content .content-bd .prize .item-hd {
         padding: 8px 0 5px;
     }
-    .content .content-bd .personal .item-hd{
+    .content .content-bd .personal .item-hd {
         padding: 0 0 5px;
     }
     .content .content-bd .practice .item-time {
