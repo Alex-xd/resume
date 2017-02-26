@@ -38,7 +38,7 @@ module.exports = {
         loaders: [{
             test: /\.html$/, loader: 'html'
         },  {
-            test: /\.scss$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract(['css?sourceMap', 'sass'])
+            test: /\.scss$/, exclude: /node_modules/, loader: ExtractTextPlugin.extract(['css?sourceMap', 'sass?sourceMap'])
         },  {
             test: /\.css$/, loader: ExtractTextPlugin.extract(['css'])
         },  {

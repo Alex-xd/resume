@@ -258,7 +258,8 @@ a {
         padding: 10px 0 5px;
         line-height: 20px;
         overflow: hidden;
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 1.1em;
         .iconfont {
             color: $color-green;
         }
@@ -276,7 +277,7 @@ a {
             margin-left: 5px;
             @media screen and (max-width: 720px) {
                 position: absolute;
-                top: 10px;
+                //top: 10px;
                 right: 0;
                 margin-top: 1px;
             }
@@ -296,7 +297,7 @@ a {
         text-align: justify;
         word-break: break-all;
         line-height: 22px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         .iconfont {
             color: $color-green;
         }
@@ -332,6 +333,9 @@ a {
         strong {
             display: inline;
             line-height: 18px;
+        }
+        .item-bd {
+            padding-left: 10px;
         }
     }
     .practice {
