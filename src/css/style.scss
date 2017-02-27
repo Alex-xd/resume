@@ -213,10 +213,16 @@ a {
         overflow: hidden;
         padding: 10px 15px;
     }
+    .practice {
+        padding-top:0;
+        .section-hd {
+            margin: 0 auto 10px;
+        }
+    }
     .section-hd {
         position: relative;
         height: 32px;
-        margin: 10px auto 5px;
+        margin: 10px auto 10px;
         overflow: hidden;
     }
     .section-bd {
@@ -255,7 +261,7 @@ a {
     }
     .item-hd {
         position: relative;
-        padding: 10px 0 5px;
+        padding: 5px 0 5px;
         line-height: 20px;
         overflow: hidden;
         font-weight: 600;
@@ -288,7 +294,7 @@ a {
         }
     }
     .personal .item-hd {
-        padding: 0 0 5px;
+        padding: 0 0 8px;
     }
     .item-bd {
         margin-bottom: 5px;
@@ -297,7 +303,7 @@ a {
         text-align: justify;
         word-break: break-all;
         line-height: 22px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         .iconfont {
             color: $color-green;
         }
@@ -327,15 +333,15 @@ a {
     }
     .skill {
         .section-content {
-            margin-bottom: 5px;
-            line-height: 24px;
+            margin-bottom: 4px;
+            line-height: 22px;
         }
         strong {
             display: inline;
             line-height: 18px;
         }
         .item-bd {
-            padding-left: 10px;
+            padding-left: 18px;
         }
     }
     .practice {
@@ -459,6 +465,7 @@ footer {
 @media print {
     body {
         padding: 0;
+        font-size:16px;
     }
     .content {
         width: 970px;
@@ -513,24 +520,14 @@ footer {
     .content .content-bd .item-hd {
         padding: 10px 0 8px;
     }
-    .content .content-bd .project .item-hd {
-        padding: 10px 0 6px;
-    }
-    .content .content-bd .practice .item-bd,
-    .content .content-bd .project .item-bd {
+    .content .content-bd .practice .item-bd{
         margin-bottom: 0;
     }
     .content .content-bd .prize .item-hd {
         padding: 8px 0 5px;
     }
-    .content .content-bd .personal .item-hd {
-        padding: 0 0 5px;
-    }
     .content .content-bd .practice .item-time {
         width: 31%;
-    }
-    .content .content-bd .section-hd {
-        margin: 0 auto 8px;
     }
     .content .content-bd section {
         padding: 10px 15px;
@@ -556,7 +553,7 @@ footer {
     footer.print-footer .footer-link {
         position: absolute;
         right: 45px;
-        bottom: 20px;
+        bottom: 25px;
         color: #c0c0c0;
         display: inline-block;
     }
