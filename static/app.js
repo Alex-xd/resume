@@ -1,2 +1,2 @@
 !function(t){function n(r){if(o[r])return o[r].exports;var e=o[r]={exports:{},id:r,loaded:!1};return t[r].call(e.exports,e,e.exports,n),e.loaded=!0,e.exports}var o={};return n.m=t,n.c=o,n.p="static/",n(0)}([function(t,n,o){t.exports=o(1)},function(t,n,o){o(2),o(4)},function(t,n){},,function(t,n){}]);
-//# sourceMappingURL=app.js.map?8656222b
+//# sourceMappingURL=app.js.map?31e5655c

@@ -337,7 +337,7 @@ a {
             line-height: 18px;
         }
         .item-bd {
-            padding-left: 18px;
+            padding-left: 6px;
         }
     }
     .practice {
@@ -528,9 +528,11 @@ footer {
     }
     
     .content .content-bd {
-        padding: 20px 30px 50px;
+        padding: 35px 30px 50px;
     }
-    
+    .content .content-bd .project {
+        padding-top: 0;
+    }
     .content .content-bd .practice .item-bd {
         margin-bottom: 0;
     }
@@ -538,11 +540,19 @@ footer {
     .content .content-bd .prize .item-hd {
         padding: 8px 0 5px;
     }
-    
+
+    .content .content-bd .practice .item-hd{
+        padding:11px 0 8px;
+    }
     .content .content-bd .practice .item-time {
         width: 31%;
     }
-    
+    .content .content-bd .practice .section-hd {
+        margin:10px auto 10px;
+    }
+    .content .content-bd .skill .section-hd {
+        //margin-top: 0;
+    }
     .content .section-content {
         line-height: 1.65 !important;
     }
