@@ -477,7 +477,7 @@ footer {
 }
 
 // 打印样式
-//@media print {
+@media print {
     body {
         padding: 0;
     }
@@ -594,4 +594,4 @@ footer {
         color: #c0c0c0;
         display: inline-block;
     }
-//}
+}

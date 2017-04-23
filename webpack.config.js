@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         path: './static',
-        filename: '[name].js?[chunkhash:8]',
+        filename: '[name].[chunkhash:8].js',
         publicPath: "static/"
     },
     devtool:'#source-map',
@@ -22,7 +22,7 @@ module.exports = {
             chunks: ['app'],
             inject: 'body'
         }),
-        new ExtractTextPlugin('[name].css?[contenthash:8]'),
+        new ExtractTextPlugin('[name].[contenthash:8].css'),
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'

@@ -4,17 +4,19 @@
   "description": "resume.alexxd.com",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
+    "init": "./node_modules/.bin/commitizen init cz-conventional-changelog --save-dev --save-exact --force",
+    "clean": "rm -rf static && mkdir static",
+    "build": "npm run clean && webpack -p",
     "dist": "sh build.sh",
-    "clean": "rm index.html && rm -rf static",
-    "rebuild": "npm run clean && npm run build",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alex-xd/resume.git"
   },
   "devDependencies": {
+    "commitizen": "^2.9.6",
     "compass-mixins": "^0.12.10",
     "css-loader": "^0.25.0",
     "cz-conventional-changelog": "^2.0.0",
