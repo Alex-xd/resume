@@ -344,7 +344,7 @@ a {
     }
     .prize {
         padding-top: 0;
-        .section-hd{
+        .section-hd {
             margin-top: 0;
         }
         .item-time {
@@ -477,7 +477,7 @@ footer {
 }
 
 // 打印样式
-@media print {
+//@media print {
     body {
         padding: 0;
     }
@@ -543,11 +543,10 @@ footer {
                 }
                 
             }
-            .project {
-                padding-top: 0;
+            .prize {
+                padding-top: 10px;
             }
             .other {
-                padding-top: 0;
                 .section-content {
                     margin-bottom: 0;
                 }
@@ -568,8 +567,7 @@ footer {
                 }
                 
             }
-            .skill .section-hd {
-                //margin-top: 0;
+            .skill{
             }
         }
         .print-hidden {
@@ -596,4 +594,4 @@ footer {
         color: #c0c0c0;
         display: inline-block;
     }
-}
+//}
